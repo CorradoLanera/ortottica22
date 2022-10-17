@@ -169,7 +169,6 @@ style_duo_accent(
 
 <br>
 <br>
-<br>
 
 C.d.L. **Ortottica e Assistenza Oftalmologica**
 
@@ -230,10 +229,8 @@ class: hide-count
 
 <br><br>
 
-> Un ringraziamento speciale a Cristiana Vettori e a Mariasole Rizzi per
-l'aiuto e il supporto logistico e amministrativo che mi è stato offerto,
-e ad Andrea Francavilla per avermi aiutato nella revisione del
-materiale.
+> Un ringraziamento speciale a Cristiana Vettori per
+l'aiuto e il supporto logistico e amministrativo che mi è stato offerto.
 
 
 
@@ -393,11 +390,18 @@ kable(epic |> slice_head(n = 10), row.names = FALSE, caption = 'Portion of "EPIC
     
          - Ordinali --- (Attività fisica: {Mai, Una volta al mese, 1-2 volte a settimana, 3 Volte a                          settimana, Piu' di 3 volte a settimana})
     
-    + Cardinali --- (Numero sigarette fumate in una settimana: {1, 2, 3, ...})
+    + Cardinali --- (Numero sigarette fumate in una settimana: {0, 1, 2, 3, ...})
 
 
 
+---
+class: inverse, middle
 
+## .orange[Sondaggio]
+
+Per me: [ORTOTTICA22PRIMA](https://app.wooclap.com/events/ORTOTTICA22PRIMA/0)
+
+Per voi: [https://bit.ly/ortottica-primosondaggio22](https://bit.ly/ortottica-primosondaggio22)
 
 
 ---
@@ -1294,14 +1298,14 @@ class: middle, center, hide-count, inverse
 
 # .orange[link al _vostro_ cloud:]
 
-[https://bit.ly/tpall22-feltre-rscloud](https://bit.ly/tpall22-feltre-rscloud)
+[https://bit.ly/ortottica-rscloud22](https://bit.ly/ortottica-rscloud22)
 
 ---
 class: inverse
 
 # Risorse utili
 
-- [**RStudio Cloud**](https://bit.ly/tpall22-feltre-rscloud): [https://bit.ly/tpall22-feltre-rscloud](https://bit.ly/tpall22-feltre-rscloud) gratis per voi per esplorare RStudio, le sue funzionalità, e allenarvi con R (link di iscrizione valido fino alla fine del corso). NOTA: a vostra scelta, è utilizzabile anche come _supporto_ durante l'esame.
+- [**RStudio Cloud**](https://bit.ly/ortottica-rscloud22): [https://bit.ly/ortottica-rscloud22](https://bit.ly/ortottica-rscloud22) gratis per voi per esplorare RStudio, le sue funzionalità, e allenarvi con R (link di iscrizione valido fino alla fine del corso). NOTA: a vostra scelta, è utilizzabile anche come _supporto_ durante l'esame.
 
 - [**RStudio primers**](https://rstudio.cloud/learn/primers) ambiente gratuito dentro RStudio Cloud per l'apprendimento delle basi di analisi di dati con R tramite tutorial interattivi. Una volta registrati, oltre all'accesso al _nostro_ spazio di lavoro, avete accesso libero anche ai _Primers_.
 
@@ -1309,7 +1313,7 @@ class: inverse
 
 - [**GGplot2 cheatsheet**](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf) schema dei possibili grafici di base rappresentabili in R con il pacchetto `{ggplot2}`, molto utile anche per conoscere le tipologie di grafico, e il loro utilizzo.
 
-- [An Introduction to Medical Statistics](https://global.oup.com/academic/product/an-introduction-to-medical-statistics-9780199589920) di [**Martin Bland**](https://www.york.ac.uk/healthsciences/our-staff/honoraryemeritus/martin-bland/), suggeriti capitoli 4 e 5.
+- [Statistica medica](https://www.maggiolieditore.it/statistica-medica.html) di [**Martin Bland**](https://www.york.ac.uk/healthsciences/our-staff/honoraryemeritus/martin-bland/), suggeriti capitoli 1, 4 e 5.
 
 - [Perché n − 1 nella formula della deviazione standard
 campionaria?](http://rdossena.altervista.org/Articoli/Book-Perch%E9%20n-1.pdf) di [Riccardo Dossena](http://rdossena.altervista.org) Traduzione dell'articolo **Book, S.A.**: _Why n − 1 in the formula for the sample standard deviation?_, The Two-Year College Mathematics Journal 10(5), 330–333 (1979
@@ -1331,7 +1335,7 @@ _Mathematical conventions are just that, conventions. They differ by field of ma
 
 
 
-Diapositive: [bit.ly/ortottica-slide22](https://bit.ly/ortottica-slide22)
+Diapositive: [https://bit.ly/ortottica-slide22](https://bit.ly/ortottica-slide22)
 
 
 [`r fontawesome::fa("link")`](https://www.unipd-ubep.it/) [**www.unipd-ubep.it**](https://www.unipd-ubep.it/) | 
@@ -1341,6 +1345,6 @@ Diapositive: [bit.ly/ortottica-slide22](https://bit.ly/ortottica-slide22)
 [`r fontawesome::fa("twitter")`](https://twitter.com/corradolanera)
 [`r fontawesome::fa("telegram")`](https://telegram.me/CorradoLanera)
 **@CorradoLanera** |
-[`r fontawesome::fa("calendar-check")` ](https://bit.ly/ortottica-ricevimento22) [**bit.ly/ortottica-ricevimento22**](https://bit.ly/ortottica-ricevimento22)
+[`r fontawesome::fa("calendar-check")` ](https://calendly.com/corradolanera) [**calendly.com/corradolanera**](https://calendly.com/corradolanera)
 
 

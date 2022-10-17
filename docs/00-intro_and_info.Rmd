@@ -264,7 +264,7 @@ class: hide-count
 - Zoom: [bit.ly/ortottica-zoom22](https://bit.ly/ortottica-zoom22),
   accessibile anche dal link sul Moodle del corso.
 
-- Materiale didattico: Moodle [bit.ly/ortottca-moodle22](https://bit.ly/ortottca-moodle22)
+- Materiale didattico: Moodle [bit.ly/ortottica-moodle22](https://bit.ly/ortottica-moodle22)
 
 - Portale accesso slide: [bit.ly/ortottica-slide22](https://bit.ly/ortottica-slide22)
 
@@ -290,39 +290,45 @@ licenza, e senza ulteriori restrizioni.
 class: hide-count
 
 
-# .orange[Agenda]
+## .orange[Agenda]
+
+<small>
+<small>
 
 Cinque lezioni da 4 _ore_ ciascuna (180' effettivi)
 
-<small>
 - Lezione 1: martedì 18 ottobre 2022 - 14:30-18:30
   + (60') intro al corso
   + (60') intro a R/RStudio (facoltativo, non oggetto di esame)
   + (60') statistica descrittiva - prerequisiti e definizioni
+  
 - Lezione 2: martedì 25 ottobre 2022 - 14:30-18:30
   + (30') ricapitolazione, domande, dubbi e perplessità
   + (90') statistica descrittiva - misure
   + (60') statistica descrittiva - rappresentazione
+
 - Lezione 3: martedì 8 novembre 2022 - 14:30-18:30
   + (30') ricapitolazione, domande, dubbi e perplessità
   + (60') basi di probabilità
   + (30') rischi
   + (60') test di screening e teorema di Bayes
+
 - Lezione 4: martedì 15 novembre 2022 - 14:30-18:30
   + (30') ricapitolazione, domande, dubbi e perplessità
   + (60') modelli/distribuzioni per variabili discrete
   + (60') modelli/distribuzioni per variabili continue
   + (30') trasformazioni e approssimazioni
+
 - Lezione 5: martedì 22 novembre 2022 - 14:30-18:30
   + (30') ricapitolazione, domande, dubbi e perplessità
   + (60') inferenza e stime: intervalli di confidenza
   + (60') inferenza e stime: test d'ipotesi
   + (30') domande e chiarimenti conclusivi, accordi per l'esame
-</small>
 
-Adattamenti su temi (o i loro ordine, durata, e livello di profondità)
-potranno avvenire in funzione dell'andamento del corso e degli interessi
+> Adattamenti potranno avvenire in funzione dell'andamento del corso e degli interessi
 riscontrati o utili.
+</small>
+</small>
 
 ---
 class: hide-count
@@ -338,7 +344,7 @@ Sono graditi e caldeggiati gli interventi e le domande.
 
 Due **pause** da mezz'ora:
 - una "reale", circa a metà della lezione
-- una "conclusiva", al termine della stessa.
+- una "iniziale o conclusiva".
 
 
 
@@ -354,7 +360,7 @@ Durante il corso saranno offerti esempi ottenuti tramite l'utilizzo dei
 software R ed RStudio, i quali verranno introdotti brevemente all'inizio 
 del corso.
 
-Tali software **non sono oggetto del corso**, né in esame. Non è richiesto 
+Tali software **non sono oggetto di esame**. Non è richiesto 
 né necessario acquisire competenze nel loro utilizzo o comprensione. Al
 contrario, sarà necessario comprenderne e capirne i risultati (grafici,
 tabelle, o numeri di sintesi prodotti).
@@ -368,7 +374,7 @@ seppur non richiesto, come supporto per lo svolgimento dell'esame (o
 degli esercizi) per chi lo desiderasse. La scelta è lasciata agli
 studenti e non comporterà valutazioni né di merito né di demerito, e **in
 alcun caso influenzerà la valutazione finale** (se non in misura di un 
-loro utilizzo corretto o errato nel produrre i risultati richiesti).
+loro utilizzo corretto o errato nel produrre i risultati).
 
 
 Un ambiente di lavoro per ciascuno di voi è attivabile e utilizzabile
@@ -405,12 +411,8 @@ predefinito di esercizi svolti e commentati per l'autoapprendimento
   corso):
   
   [bit.ly/ortottica-ricevimento22](https://bit.ly/ortottica-ricevimento22).
-  La settimana precedente una sessione d'esame non è attivo il ricevimento.
-
-
-> Utilizzare il ricevimento è soggetto a condizioni, tra cui il
-riportarne in modo sintetico il contenuto nel forum, a
-beneficio di tutti i vostri colleghi.
+  
+> La settimana precedente una sessione d'esame non è attivo il ricevimento.
 
 
 
@@ -510,11 +512,11 @@ class: inverse, center, middle, hide-count
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .left[
-_If you think the only acceptable performance is the ".orange[perfect performance]",<br>AI is not for you!<br>But, I've heard that even humans have made mistakes..._
+_**Can** one be a .orange[good data analyst] **without** being a .orange[half-good programmer]?<br>The short answer to that is, 'No.'<br>The long answer to that is, 'No.'_
 ]
 
 .tr[
-— Daniel Oberski<br>2021/03/26 ASReview interview<br>https://daob.nl/
+—Frank Harrell<br>10/1999 - S-PLUS User Conference, New Orleans<br>
 ]
 ]
 

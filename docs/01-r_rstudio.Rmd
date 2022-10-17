@@ -165,7 +165,7 @@ style_duo_accent(
 
 -- Introduzione a R/RStudio --
 
-(opzionale, fuori programma)
+(non soggetto a esame)
 <br>
 <br>
 
@@ -195,11 +195,13 @@ Inoltre, ho messo a disposizione (**gratuitamente**) un ambiente di lavoro RStud
 <br><br><br><br>
 
 <small>
-.right[\* La mia opinione in merito, chiaramente, è: _si_ `r emo::ji("wink")`.]
+.right[
+\* La mia opinione in merito, chiaramente, è: _si_ `r emo::ji("wink")`.
 
-.right[\*\* Una tale scelta **non comporterà valutazioni** di merito né demerito, e in alcun caso influenzerà la valutazione finale (se non in misura di un loro utilizzo corretto o errato nel produrre i risultati richiesti).]
+\*\* Una tale scelta **non comporterà valutazioni** di merito né demerito, e in alcun caso influenzerà la valutazione finale (se non in misura di un loro utilizzo corretto o errato nel produrre i risultati richiesti).
 
-.right[ \*\*\* Volendo, anche su smartphone e tablet, seppur piuttosto scomodo!]
+\*\*\* Volendo, anche su smartphone e tablet, seppur piuttosto scomodo!
+]
 
 </small>
 
@@ -477,14 +479,14 @@ class: middle, center, hide-count, inverse
 
 # .orange[Vediamolo...<br>...sul _vostro_ cloud!]
 
-[https://bit.ly/tpall22-feltre-rscloud](https://bit.ly/tpall22-feltre-rscloud)
+[https://bit.ly/ortottica-rscloud22](https://bit.ly/ortottica-rscloud22)
 
 ---
 class: inverse
 
 # Risorse utili
 
-- [**RStudio Cloud**](https://bit.ly/tpall22-feltre-rscloud): [https://bit.ly/tpall22-feltre-rscloud](https://bit.ly/tpall22-feltre-rscloud) gratis per voi per esplorare RStudio, le sue funzionalità, e allenarvi con R (link di iscrizione valido fino alla fine del corso). NOTA: a vostra scelta, è utilizzabile anche come _supporto_ durante l'esame.
+- [**RStudio Cloud**](https://bit.ly/ortottica-rscloud22): [https://bit.ly/ortottica-rscloud22](https://bit.ly/ortottica-rscloud22) gratis per voi per esplorare RStudio, le sue funzionalità, e allenarvi con R (link di iscrizione valido fino alla fine del corso). NOTA: a vostra scelta, è utilizzabile anche come _supporto_ durante l'esame.
 
 - [**RStudio primers**](https://rstudio.cloud/learn/primers) ambiente gratuito dentro RStudio Cloud per l'apprendimento delle basi di analisi di dati con R tramite tutorial interattivi. Una volta registrati, oltre all'accesso al _nostro_ spazio di lavoro, avete accesso libero anche ai _Primers_.
 
@@ -518,11 +520,11 @@ class: inverse, center, middle, hide-count
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .left[
-_**Can** one be a .orange[good data analyst] **without** being a .orange[half-good programmer]?<br>The short answer to that is, 'No.'<br>The long answer to that is, 'No.'_
+_If you think the only acceptable performance is the ".orange[perfect performance]",<br>AI is not for you!<br>But, I've heard that even humans have made mistakes..._
 ]
 
 .tr[
-—Frank Harrell<br>10/1999 - S-PLUS User Conference, New Orleans<br>
+— Daniel Oberski<br>2021/03/26 ASReview interview<br>https://daob.nl/
 ]
 ]
 

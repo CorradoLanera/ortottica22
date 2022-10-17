@@ -168,7 +168,8 @@ Padova, a.a. 2022/2023 - 20 ore (2 crediti)
 **Giorno**    | **Tema**                 | **Diapositive**
 -------------:|:-------------------------|:--------------------
 2022/10/18    | Intro e info             | [Intro e info](00-intro_and_info.html)
-2022/10/18    | R e RStudio              | 
+2022/10/18    | R e RStudio              | [R e RStudio](01-r_rstudio.html)
+2022/10/18    | Descrittive (notazioni)  | [Descrittive](02-descrittive.html)
 2022/10/25    | Descrittive              | 
 2022/10/08    | Probabilità              | 
 2022/10/15    | Distribuzioni            | 
