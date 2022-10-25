@@ -501,8 +501,8 @@ ages_db |>
 
 .panelset[
 .panel[.panel-name[Natural]
-Siccome $n$ è pari, la mediana è la media della 10-ma e 11-ma osservazione
-(ordinate)
+Siccome $n$ è pari (e uguale a 6), la mediana è la media la 3a ( $=6/2$ ) e 4a ( $(6+1)/2$ ) osservazione
+(ordinate!)
 $$\mbox{Mediana} = \frac{55.1 + 62.9}{2} = 59$$
 E anche modificando il primo valore (55.1) con 20, la mediana non cambia
 per nulla, e **resta 59**.
@@ -544,7 +544,7 @@ ages_db_dispari |>
 .panelset[
 .panel[.panel-name[Natural]
 Nel casi in cui N sia dispari (prendiamo per esempio $N = 7$), prendiamo
-direttamente il valore centrale, ovvero **62.9**.
+direttamente il valore centrale (in posizione $4 = (7+1)/2 $ ), ovvero **62.9**.
 
 ]
 
@@ -555,7 +555,7 @@ age_sorted <- sort(age)
 age_sorted
 n <- length(age_sorted)
 age_sorted[(n + 1) / 2]
-median(age)
+median(age, type = 2) # default is `type = 7` (for continuity)
 ```
 
 ]
@@ -667,7 +667,7 @@ colesterolo <- tibble(
 kable(colesterolo)
 ```
 
-Le media campionaria (nonostante l'evidente differenza di variabilità) resta identica:
+Le media campionaria (nonostante la differenza di variabilità) resta identica:
 ```{r, echo=FALSE}
 summarise(colesterolo, across(everything(), mean)) |> 
   kable()
@@ -829,6 +829,49 @@ $$CV = 43.35/234.83 \times 100 \simeq 18\%$$
 
 
 
+
+
+
+---
+class: inverse, middle
+
+## .orange[Sondaggio]
+
+Per me: [ORTOTTICA22SECONDA](https://app.wooclap.com/events/ORTOTTICA22SECONDA/0)
+
+Per voi: [https://bit.ly/ortottica-secondosondaggio22](https://bit.ly/ortottica-secondosondaggio22)
+
+
+
+
+
+---
+class: inverse, center, middle, hide-count
+
+# .center[.orange[Break]]
+.left[
+- sgranchirsi
+- guardare _lontano_ (rilassare gli occhi)
+- bere
+- andare in bagno
+]
+
+```{r, echo = FALSE}
+countdown(minutes = 30, warn_when = 5, play_sound = TRUE,
+          left = "70%", bottom = "20%")
+```
+
+
+---
+class: inverse, middle
+
+## .orange[Domande fin qui?]
+
+
+
+
+
+
 ---
 # .orange[Percentili]
 
@@ -918,7 +961,7 @@ epic_bmi_p2 |>
 1. Si calcola $np/100$, pari a:
   - 20-imo percentile (p/100 = 0.2): $9 \times 0.2 = 1.8$
 
-2. (È un valore decimale, quindi) Si trova il $k$-mo intero inferiore a 1.8:
+2. (È un valore decimale, quindi) Si trova $k$ massimo intero non superiore a 1.8:
   - 1 (il _primo_).
 
 3. Il 20-esimo percentile è il $k+1$-esimo valore (ordinato!); ovvero quello in posizione $1 + 1 = 2$, il secondo; ovvero, **`r epic_bmi_p2$bmi[[2]]`**.
@@ -1068,20 +1111,6 @@ class: inverse, middle
 
 
 ---
-# Dati continui: istogramma
-
-Per il calcolo dell'istogramma, la tabella delle frequenze deve essere
-estesa
-
-
-|Gruppi            | Media                       | Frequenza| Ampiezza            | Densità
-|:----------------:|:---------------------------:|:--------:|:-------------------:|:-------
-| $[y_1, y_2)$     | $\frac{y_1+y_2}{2}$         | $f_1$    | $a_1 = y_2-y_1$     | $\frac{f_1}{a_1}$
-| $\vdots$         | $\vdots$                    | $\vdots$ | $\vdots$            | $\vdots$
-| $[y_k, y_{k+1})$ | $\frac{y_k+y_{k+1}}{2}$     | $f_k$    | $a_k = y_{k+1}-y_k$ | $\frac{f_{k+1}}{a_k}$
-
-
----
 ## Istogramma
 <small>
 L'istogramma è uno stimatore della distribuzione
@@ -1102,6 +1131,22 @@ epic |>
 ```
 ]
 </small>
+
+
+---
+# Dati continui: istogramma
+
+Per il calcolo dell'istogramma, la tabella delle frequenze deve essere
+estesa
+
+
+|Gruppi            | Media                       | Frequenza| Ampiezza            | Densità
+|:----------------:|:---------------------------:|:--------:|:-------------------:|:-------
+| $[y_1, y_2)$     | $\frac{y_1+y_2}{2}$         | $f_1$    | $a_1 = y_2-y_1$     | $\frac{f_1}{a_1}$
+| $\vdots$         | $\vdots$                    | $\vdots$ | $\vdots$            | $\vdots$
+| $[y_k, y_{k+1})$ | $\frac{y_k+y_{k+1}}{2}$     | $f_k$    | $a_k = y_{k+1}-y_k$ | $\frac{f_{k+1}}{a_k}$
+
+
 
 ---
 ## Istogramma: autocalcolato
@@ -1128,6 +1173,31 @@ epic |>
 ```
 ]
 </small>
+
+
+
+---
+# Dati continui: box-plot (mag)
+
+.panelset[
+```{r panelset = c(source = "ggplot2", output = "Plot"), out.width = "60%"}
+epic |> 
+  slice(101:200) |> 
+  ggplot(aes(y = mag)) +
+  geom_boxplot() +
+  geom_point(aes(x = 0, y = mean(mag)), shape = "+", size = 6) +
+  labs(
+    x = "",
+    y = "Mag [mg/die]"
+  ) +
+  theme_bw() +
+  theme(
+    axis.ticks.x = element_blank(),
+    axis.text.x = element_blank()
+  )
+```
+]
+
 
 
 ---
@@ -1171,29 +1241,6 @@ $$x < 215.35 - 1.5 * (323.95 - 215.35) = 52.45$$
 $$x > 323.95 + 3 * (323.95 - 215.35) = 649.75$$
 $$x < 215.35 - 3 * (323.95 - 215.35) = 0$$
 </small>
-
-
----
-# Box-plot (mag)
-
-.panelset[
-```{r panelset = c(source = "ggplot2", output = "Plot"), out.width = "60%"}
-epic |> 
-  slice(101:200) |> 
-  ggplot(aes(y = mag)) +
-  geom_boxplot() +
-  geom_point(aes(x = 0, y = mean(mag)), shape = "+", size = 6) +
-  labs(
-    x = "",
-    y = "Mag [mg/die]"
-  ) +
-  theme_bw() +
-  theme(
-    axis.ticks.x = element_blank(),
-    axis.text.x = element_blank()
-  )
-```
-]
 
 
 ---
