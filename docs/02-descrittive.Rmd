@@ -404,6 +404,28 @@ Per me: [ORTOTTICA22PRIMA](https://app.wooclap.com/events/ORTOTTICA22PRIMA/0)
 Per voi: [https://bit.ly/ortottica-primosondaggio22](https://bit.ly/ortottica-primosondaggio22)
 
 
+
+
+
+
+---
+class: inverse, center, middle, hide-count
+
+# .center[.orange[Break]]
+.left[
+- sgranchirsi
+- guardare _lontano_ (rilassare gli occhi)
+- bere
+- andare in bagno
+]
+
+```{r, echo = FALSE}
+countdown(minutes = 15, warn_when = 3, play_sound = TRUE,
+          left = "70%", bottom = "20%")
+```
+
+
+
 ---
 class: inverse, middle
 
@@ -840,26 +862,6 @@ class: inverse, middle
 Per me: [ORTOTTICA22SECONDA](https://app.wooclap.com/events/ORTOTTICA22SECONDA/0)
 
 Per voi: [https://bit.ly/ortottica-secondosondaggio22](https://bit.ly/ortottica-secondosondaggio22)
-
-
-
-
-
----
-class: inverse, center, middle, hide-count
-
-# .center[.orange[Break]]
-.left[
-- sgranchirsi
-- guardare _lontano_ (rilassare gli occhi)
-- bere
-- andare in bagno
-]
-
-```{r, echo = FALSE}
-countdown(minutes = 30, warn_when = 5, play_sound = TRUE,
-          left = "70%", bottom = "20%")
-```
 
 
 ---

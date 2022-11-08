@@ -212,10 +212,8 @@ class: hide-count
 
 <br><br>
 
-> Un ringraziamento speciale a Cristiana Vettori e a Mariasole Rizzi per
-l'aiuto e il supporto logistico e amministrativo che mi è stato offerto,
-e ad Andrea Francavilla per avermi aiutato nella revisione del
-materiale.
+> Un ringraziamento speciale a Cristiana Vettori per
+l'aiuto e il supporto logistico e amministrativo che mi è stato offerto.
 
 ---
 class: inverse, middle
@@ -581,6 +579,9 @@ $$P(B) = P(B\cap A)+P(B \cap \bar{A})$$
 e ricordando la definizione
 $$P(B|A)=\frac{P(A \cap B)}{P(A)}$$
 
+da cui
+
+$$P(A \cap B) = P(A|B)P(A)$$
 ---
 # .orange[Condizionamento]: esempio
 
@@ -701,6 +702,12 @@ $$\frac{P(B|A)}{P(B|\bar{A})}$$
 > **Se**: $A$ e $B$ sono .orange[indipendenti]
 > 
 > **Allora**:  $RR = 1$ (infatti $P(B|A) = P(B|\bar{A}) = P(B)$ )
+ 
+ 
+> NOTA 2:
+>
+> Definiamo **Rischio assoluto** il rapporto tra i casi osservati e i casi osservabili, ovvero la probabilità che un certo evento accada sotto determinate condizioni in una data popolazione.
+>
 
 ---
 # .orange[Rischio relativo]: esempio
@@ -771,9 +778,6 @@ $$\begin{split}P(B^+|A^+)& = \frac{P(B^+\cap A^+)}{P(A^+)}\\& = 0.08/0.1\\& = 0.
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
 > Ricordiamo: $P(B^+)=P(B^+ \cap A^+)+P(B^+ \cap A^-)$
 
@@ -797,7 +801,7 @@ $$\begin{split}P(B^+|A^-)& = \frac{P(B^+\cap A^-)}{P(A^-)}\\& = \frac{P(B^+)-P(B
 # .orange[Test di screening]: valori predittivi
 
 
-Il **valore predittivo positivo** (o anche **precisione**) $PV^+$ di un test di screening è la probabiliàche la persona abbia la malattia dato un test positivo
+Il **valore predittivo positivo** (o anche **precisione**) $PV^+$ di un test di screening è la probabilià che la persona abbia la malattia dato un test positivo
 
 $$PV^+ = P(\mbox{malattia}|\mbox{test}^+)$$
 
@@ -886,7 +890,7 @@ $$(PV^+ = )\ P(M|T) = \frac{P(T|M)P(M)}{P(T)} = \frac{P(T|M)P(M)}{P(T|M)P(M)+P(T
 
 **Calcoliamo**: $PV^+ = P(M|T) \quad PV^-=P(\bar{M}|\bar{T})$
 
-> Nota: $P(M)$ è la **prevalenza** della malattia nella popolazione di 
+> Nota: .orange[In assenza di altre informazioni], $P(M)$ è la **prevalenza** della malattia nella popolazione di 
 riferimento
 
 $$PV^+=\frac{SENS\cdot prev}{(SENS\cdot prev) + (1- SPEC)\cdot(1 - prev)}$$
@@ -914,7 +918,7 @@ $$(PV^+ = )\ P(M|T) = \frac{P(T|M)P(M)}{P(T|M)P(M)+P(T|\bar{M})P(\bar{M})}$$
 
 
 ```{r, echo = FALSE}
-countdown(minutes = 3, warn_when = 1, play_sound = TRUE,
+countdown(minutes = 5, warn_when = 1, play_sound = TRUE,
           left = "70%", bottom = "5%")
 ```
 
