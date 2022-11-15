@@ -1066,7 +1066,7 @@ text(67,0.0005,"P(X < 88)",cex=1.2)
 ---
 # Valore .orange[atteso] e .orange[varianza]
 
-Il valore atteso, indicato con $E(X)$, o $\mu$ è la **media** dei valori della variabile aleatoria $X$
+Il valore atteso, indicato con $E(X)$, o $\mu$ è la **media** dei valori della variabile aleatoria $X$ (ovvero, la somma di prodotti tra i valori che può assumere e le corrispondenti probabilità)
 
 <br>
 
